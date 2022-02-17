@@ -1,6 +1,6 @@
-import { Dialog } from '@mui/material';
+import { Button, Dialog } from '@mui/material';
 import MessageCard from 'components/MessageCard';
-import React from 'react';
+import React, { useState } from 'react';
 
 /* 
   idea de implementacion generar la siguiente estructura
@@ -24,10 +24,20 @@ import React from 'react';
 */
 
 function App() {
+  const [open, setOpen] = useState(false);
+
+  const _handleClick = () => {
+    setOpen(true);
+  };
+
+  const _handleClose = () => {
+    setOpen(false);
+  };
   return (
     <div className="App">
-      <Dialog open>
-        <MessageCard />
+      <Button onClick={_handleClick}>Abrir</Button>
+      <Dialog open={open} onClose={_handleClose}>
+        <MessageCard onClose={_handleClose} />
       </Dialog>
     </div>
   );

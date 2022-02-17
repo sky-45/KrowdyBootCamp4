@@ -32,20 +32,20 @@ export const templateConfigs = [
   {
     type: MessageType.Reminder,
     channel: ChannelType.Email,
-    subject: 'Invitación a proceso',
-    body: 'Hola, [userName] hemos visto tu perfil y nos parece interesante. Encuentra mas informacion aqui: [Link]',
+    subject: 'Recordatorio de proceso',
+    body: 'Hola, [userName] nos gustaria recordarte que tienes pendiente un proceso. Entra aqui para continuar [Link]',
   },
   {
     type: MessageType.Reminder,
     channel: ChannelType.Sms,
-    subject: 'Invitación a proceso',
-    body: 'Hola, [userName] hemos visto tu perfil y nos parece interesante. Encuentra mas informacion aqui: [Link]',
+    subject: 'Recordatorio de proceso',
+    body: 'Hola, [userName] nos gustaria recordarte que tienes pendiente un proceso. Entra aqui para continuar [Link]',
   },
   {
     type: MessageType.Reminder,
     channel: ChannelType.Whatsapp,
-    subject: 'Invitación a proceso',
-    body: 'Hola, [userName] hemos visto tu perfil y nos parece interesante. Encuentra mas informacion aqui: [Link]',
+    subject: 'Recordatorio de proceso',
+    body: 'Hola, [userName] nos gustaria recordarte que tienes pendiente un proceso. Entra aqui para continuar [Link]',
   },
   {
     type: MessageType.Customized,
